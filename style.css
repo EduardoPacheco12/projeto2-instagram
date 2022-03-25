@@ -1,0 +1,80 @@
+body {
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 2000px;
+}
+
+/* Configurações da Barra Topo do Instagram */
+.barra-topo {
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border: 1px solid #dbddbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-topo div > ion-icon {
+    font-size: 25px;
+}
+
+.barra-topo .barra-vertical {
+    width:1px;
+    height: 22px;
+    background-color: #dbdbdb;
+    margin-left: 11.38px;
+    margin-right: 10px;
+}
+
+.barra-topo .logo {
+    margin-top: 5px;
+}
+
+.barra-topo .pesquisar {
+    width: 215px;
+    height: 26px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 214px;
+    margin-right: 214px;
+}
+
+.barra-topo .bussola {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.barra-topo .perfil {
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+/*Versão Desktop sem Sidebar e Versão Mobile*/
+@media(max-width:935px) and (min-width:615px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (max-width:614px) {
+    body {
+        background-color: red;
+    }
+}
