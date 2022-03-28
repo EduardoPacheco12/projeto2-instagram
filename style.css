@@ -1,21 +1,27 @@
 body {
-    background-color: #e5e5e5;
-    height: 2000px;
+    background-color: #E5E5E5;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-weight: 500;
 }
 
 /* Configurações da Barra Topo do Instagram */
 .barra-topo {
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 54px;
-    background-color: #ffffff;
-    border: 1px solid #dbddbd;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBBD;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.barra-topo div > ion-icon {
+.barra-topo div ion-icon {
     font-size: 25px;
 }
 
@@ -27,7 +33,7 @@ body {
 .barra-topo .barra-vertical {
     width:1px;
     height: 22px;
-    background-color: #dbdbdb;
+    background-color: #DBDDBD;
     margin: 0 10px;
 }
 
@@ -59,7 +65,6 @@ body {
 .barra-topo .topo-direita {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .bussola {
@@ -77,27 +82,343 @@ body {
 }
 
 .principal {
-    background-color: yellow;
-    width: 614px;
-    height: 1912px;
+    width: 612px;
     margin-top: 88px;
 }
 
 .sidebar {
-    background-color: green;
-    width: 300px;
+    width: 293px;
     height: 497px;
     margin-top: 111px;
     margin-left: 30px;
 }
 
+/*Configurações da Sidebar*/
+.sidebar .meu-perfil {
+    height: 56px;
+    display: flex;
+}
 
+.meu-perfil .foto-meu-perfil {
+    width: 56px;
+    margin-right: 17px;
+    background-image: url(Images/FotoPerfil.jpg);
+    background-size: 100%;
+    border-radius: 28px;
+}
+
+.meu-perfil .usuario-meu-perfil  {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.meu-perfil .usuario-meu-perfil {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+}
+
+ .meu-perfil .usuario-meu-perfil p:nth-child(1) {
+    font-weight: 500;
+    color: #262626;
+}
+
+.meu-perfil .usuario-meu-perfil p:nth-child(2) {
+    font-weight: 300;
+    color: #8E8E8E
+}
+
+.sidebar .sugestoes {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .sugestoes p:nth-child(1) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+}
+
+.sidebar .sugestoes p:nth-child(2) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+}
+
+.perfis-sugestoes .perfil-sugestoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.perfil-sugestoes .conjunto-sugestoes{
+    display: flex;
+}
+
+.conjunto-sugestoes .foto-sugestoes-um {
+    width: 32px;
+    margin-right: 11px;
+    background-image: url(Images/Desimpedidos.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.conjunto-sugestoes .foto-sugestoes-dois {
+    width: 32px;
+    margin-right: 11px;
+    background-image: url(Images/Fanaticos.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.conjunto-sugestoes .foto-sugestoes-tres {
+    width: 32px;
+    margin-right: 11px;
+    background-image: url(Images/FutebolNews.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.conjunto-sugestoes .foto-sugestoes-quatro {
+    width: 32px;
+    margin-right: 11px;
+    background-image: url(Images/Futmais.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.conjunto-sugestoes .foto-sugestoes-cinco {
+    width: 32px;
+    margin-right: 11px;
+    background-image: url(Images/MemesFut.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.conjunto-sugestoes .usuario-sugestoes p:nth-child(1) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 3px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.conjunto-sugestoes .usuario-sugestoes p:nth-child(2) {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+
+}
+
+.perfil-sugestoes .seguir-sugestoes {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139EF2;
+}
+
+.sidebar .infos-instagram {
+    margin-top: 33px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
+}
+
+.infos-instagram p:nth-child(1) {
+    margin-bottom: 18px;
+}
+
+/*Configuração dos stories*/
+
+.stories {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 118px;
+    padding-left: 18px;
+    margin-bottom: 24px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.story {
+    margin-right: 14px;
+}
+
+.imagem-story {
+    position: relative;
+}
+
+.conteudo-story {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    image-rendering: 100%;
+}
+
+.borda-story {
+    width: 66px;
+    height: 66px;
+}
+
+.story .texto-story {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+}
+
+.texto-story p {
+    text-align: center;
+}
+
+
+.stories .seta {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 580px;
+    font-size: 27px;
+    color: #FEFEFE;
+}
+
+/*Configuração dos posts*/
+.posts {
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+}
+
+.posts .post-topo {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-topo .perfil-post {
+    display: flex;
+    align-items: center;
+}
+
+.post-topo .tres-pontos ion-icon {
+        font-size: 20px;
+        margin-right: 17px;
+}
+
+.perfil-post .foto-post-um {
+    width: 32px;
+    height: 32px;
+    margin-left: 17px;
+    margin-right: 15px;
+    background-image: url(Images/LuvaDePedreiro.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.perfil-post .foto-post-dois {
+    width: 32px;
+    height: 32px;
+    margin-left: 17px;
+    margin-right: 15px;
+    background-image: url(Images/Neymar.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.perfil-post .foto-post-tres {
+    width: 32px;
+    height: 32px;
+    margin-left: 17px;
+    margin-right: 15px;
+    background-image: url(Images/Gabigol.jpg);
+    background-size: 100%;
+    border-radius: 16px; 
+}
+
+.perfil-post .usuario-post {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.imagem-post {
+    width: 100%;
+} 
+
+.interacao-post {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.interacao-esquerda {
+    display: flex;
+}
+
+.interacao-post ion-icon {
+    font-size: 23px;
+}
+
+.interacao-esquerda .comentar-post {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.curtidas-post {
+    margin-top: 10px;
+    margin-left: 17px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.curtidas-post .foto-curtidas {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url(Images/Caze.jpg);
+    background-size: 100%;
+    border-radius: 10px; 
+}
+
+.curtidas-post .texto-curtidas {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+}
+
+.barra-fundo {
+    display: none;
+}
 
 /*Versão Desktop sem Sidebar*/
 @media(max-width:935px) and (min-width:615px) {
-    body {
-        background-color: blue;
-    }
 
     /* Configurações da Barra Topo do Instagram */
     .barra-topo {
@@ -123,11 +444,15 @@ body {
     }
 }
 
+.barra-fundo {
+    display: none;
+}
 
 /*Versão Mobile*/
 @media (max-width:614px) {
-    body {
-        background-color: red;
+
+    body{
+        height: 1180px;
     }
 
     /* Configurações da Barra Topo do Instagram */
@@ -178,7 +503,41 @@ body {
     }
 
     .principal {
+        width: 100%;
+        margin-top: 54px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .stories {
+        background-color: #E5E5E5;
+        margin-bottom: 0px;
+    }
+
+    .imagem-post {
+        width: 100%;
+    }
+
+    /* Configurações da Barra Inferior do Instagram */
+    .barra-fundo {
+        background-color: #FFFFFF;
+        display: inline;
+        height: 54px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;   
+        border: 1px solid #DBDBDB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .barra-fundo ion-icon{
+        font-size: 23px;
     }
 }
